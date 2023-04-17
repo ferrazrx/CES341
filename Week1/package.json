@@ -1,0 +1,12 @@
+{
+  "name": "ces341-week1",
+  "version": "1.0.0",
+  "description": "Simple server that returns a string with a name",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+
+  },
+  "author": "Rafael Ferraz",
+  "license": "ISC"
+}
