@@ -1,0 +1,11 @@
+###
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/6446e0f9391c94d078368465
+###
+GET http://localhost:8080/contacts/6446e116391c94d078369e48
+###
+GET http://localhost:8080/contacts/6446e13a391c94d07836b8a1
+
+// Production
+
