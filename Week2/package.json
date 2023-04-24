@@ -2,10 +2,10 @@
   "name": "week2",
   "version": "1.0.0",
   "description": "Lesson 2: REST Clients, GET Requests, Node Architecture",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build": "npx tsc",
-    "start": "node dist/index.js",
+    "start": "node dist/app.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
