@@ -1,7 +1,27 @@
 ###
 GET http://localhost:8080/contacts
 ###
-GET http://localhost:8080/contacts/6446e0f9391c94d078368465
+POST http://localhost:8080/contacts/
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "jonhdoe@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "01/01/1900"
+}
+###
+PUT http://localhost:8080/contacts/645040b8dc0c0c90ad25e2d4
+content-type: application/json
+
+{
+    "firstName": "Rafael",
+    "lastName": "Ferraz"
+}
+###
+DELETE http://localhost:8080/contacts/64504449ee100d29aafd9c2b
+
 ###
 GET http://localhost:8080/contacts/6446e116391c94d078369e48
 ###
@@ -10,9 +30,3 @@ GET http://localhost:8080/contacts/6446e13a391c94d07836b8a1
 // Production
 ###
 GET https://week2-n3e8.onrender.com/contacts/
-###
-GET https://week2-n3e8.onrender.com/contacts/6446e0f9391c94d078368465
-###
-GET https://week2-n3e8.onrender.com/contacts/6446e116391c94d078369e48
-###
-GET https://week2-n3e8.onrender.com/contacts/6446e13a391c94d07836b8a1

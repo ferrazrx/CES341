@@ -7,6 +7,9 @@ export const contactsRouter = Router();
 
 const contactsController = new ContactsController(myContainer.get<ContactsService>(TYPES.ContactService))
 
+class ContactsRouter{
+    constructor(@inject(TYPES.ContactsController) private contactRepository: Repository<Contact>)
+}
 /* GET Routes. */
 contactsRouter.get('/', contactsController.getAll);
 contactsRouter.get('/:id', contactsController.findByID);

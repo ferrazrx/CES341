@@ -8,3 +8,4 @@
 # Environment Variable
 .env
 /_
+.vscode

@@ -10,3 +10,12 @@ const contactsController = new ContactsController(myContainer.get<ContactsServic
 /* GET Routes. */
 contactsRouter.get('/', contactsController.getAll);
 contactsRouter.get('/:id', contactsController.findByID);
+
+/* POST Routes. */
+contactsRouter.post('/', contactsController.createOne);
+
+/* PUT Routes. */
+contactsRouter.put('/:id', contactsController.updateOne);
+
+/* DELETE Routes. */
+contactsRouter.delete('/:id', contactsController.deleteOne);
