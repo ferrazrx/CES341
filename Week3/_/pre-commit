@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+./Week3/_/husky.sh
+cd Week3 && npm run lint

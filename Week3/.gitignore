@@ -1,0 +1,10 @@
+# Modules
+/node_modules
+
+# Distribution
+/dist
+
+
+# Environment Variable
+.env
+/_
