@@ -20,13 +20,31 @@ content-type: application/json
     "lastName": "Ferraz"
 }
 ###
-DELETE http://localhost:8080/contacts/64504449ee100d29aafd9c2b
-
-###
-GET http://localhost:8080/contacts/6446e116391c94d078369e48
-###
-GET http://localhost:8080/contacts/6446e13a391c94d07836b8a1
+DELETE http://localhost:8080/contacts/64504428ee100d29aafd9c2a
 
 // Production
 ###
-GET https://week2-n3e8.onrender.com/contacts/
+GET https://week3.onrender.com/contacts/
+
+###
+POST https://week3.onrender.com/contacts/
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "jonhdoe@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "01/01/1900"
+}
+###
+PUT https://week3.onrender.com/contacts/
+content-type: application/json
+
+{
+    "firstName": "Rafael",
+    "lastName": "Ferraz"
+}
+###
+DELETE https://week3.onrender.com/contacts/
+
