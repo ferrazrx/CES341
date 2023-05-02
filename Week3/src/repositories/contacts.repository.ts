@@ -70,7 +70,7 @@ export class ContactRepository implements Repository<Contact> {
       if (!cursor) {
         throw new Error('Cursor was not retrieved correctly.');
       }
-      return cursor as Contact;
+      return cursor;
     } catch (e) {
       throw new Error('Error, could not retrieve the contact! - ' + (e as Error).message);
     }
@@ -100,7 +100,7 @@ export class ContactRepository implements Repository<Contact> {
         { returnDocument: 'after' },
       );
       if (result && result.ok && result.value) {
-        return result.value as Contact;
+        return result.value;
       }
       throw new Error('Database not acknowledged.');
     } catch (e) {

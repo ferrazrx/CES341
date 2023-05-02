@@ -1,6 +1,6 @@
-import { ObjectId } from 'mongodb';
+import { ObjectId, WithId } from 'mongodb';
 
-export class Contact {
+export class Contact implements WithId<Contact> {
   constructor(
     public _id: ObjectId | undefined,
     public firstName: string,

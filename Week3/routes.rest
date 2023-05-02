@@ -20,7 +20,7 @@ content-type: application/json
     "lastName": "Ferraz"
 }
 ###
-DELETE http://localhost:8080/contacts/64504428ee100d29aafd9c2a
+DELETE http://localhost:8080/contacts/6450478aa9fae0f9af263465
 
 // Production
 ###
@@ -31,20 +31,20 @@ POST https://week3.onrender.com/contacts/
 content-type: application/json
 
 {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "jonhdoe@gmail.com",
+    "firstName": "Dart",
+    "lastName": "Vader",
+    "email": "dartVader@deadstar.com",
     "favoriteColor": "black",
     "birthday": "01/01/1900"
 }
 ###
-PUT https://week3.onrender.com/contacts/
+PUT https://week3.onrender.com/contacts/645047a4a9fae0f9af263466
 content-type: application/json
 
 {
-    "firstName": "Rafael",
-    "lastName": "Ferraz"
+    "firstName": "R2D2",
+    "lastName": "Kenobi"
 }
 ###
-DELETE https://week3.onrender.com/contacts/
+DELETE https://week3.onrender.com/contacts/6450478aa9fae0f9af263465
 

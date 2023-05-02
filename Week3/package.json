@@ -1,7 +1,7 @@
 {
   "name": "week3",
   "version": "1.0.0",
-  "description": "Lesson 2: REST Clients, GET Requests, Node Architecture",
+  "description": "Lesson 3: REST Clients, GET Requests, Node Architecture",
   "main": "app.js",
   "scripts": {
     "prepare": "cd .. && husky install ./Week3/ && git config core.hooksPath ./Week3/_",
