@@ -10,7 +10,7 @@ const doc = {
   },
   consumes: ['application/json'],
   produces: ['application/json'],
-  host: 'week4-3tit.onrender.com/',
+  host: 'week4-3tit.onrender.com',
   schemes: ['http'],
   basePath: '/contacts/',
 };
