@@ -13,7 +13,19 @@ import cors from 'cors';
 const app: Express = express();
 
 // Security layer
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ['*'],
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+        connectSrc: ['*'],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+        imgSrc: ["'self'"],
+      },
+    },
+  }),
+);
 
 const origin = {
   origin: '*',
