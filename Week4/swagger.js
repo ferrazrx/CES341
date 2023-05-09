@@ -18,6 +18,4 @@ const doc = {
 const outputFile = './swagger-output.json';
 const endpointsFiles = ['./dist/src/api/contacts.api.js'];
 
-swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
-  require('./dist/src/app.js');
-});
+swaggerAutogen(outputFile, endpointsFiles, doc);
