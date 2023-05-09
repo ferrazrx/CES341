@@ -10,8 +10,8 @@ const doc = {
   },
   consumes: ['application/json'],
   produces: ['application/json'],
-  host: 'localhost:8080',
-  schemes: ['http', 'https'],
+  host: 'https://week4-3tit.onrender.com/',
+  schemes: ['http'],
   basePath: '/contacts/',
 };
 
