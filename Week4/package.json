@@ -10,7 +10,7 @@
     "build": "npx tsc",
     "start": "node dist/app.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\"",
-    "swagger-autogen": "npm run build && node ./swagger.js",
+    "swagger-autogen": "node ./swagger.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rafael Ferraz",
