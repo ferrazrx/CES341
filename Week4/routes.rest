@@ -1,0 +1,50 @@
+###
+GET http://localhost:8080/contacts
+###
+POST http://localhost:8080/contacts/
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "jonhdoe@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "01/01/1900"
+}
+###
+PUT http://localhost:8080/contacts/645040b8dc0c0c90ad25e2d4
+content-type: application/json
+
+{
+    "firstName": "Rafael",
+    "lastName": "Ferraz"
+}
+###
+DELETE http://localhost:8080/contacts/6450478aa9fae0f9af263465
+
+// Production
+###
+GET https://week3.onrender.com/contacts/
+
+###
+POST https://week3.onrender.com/contacts/
+content-type: application/json
+
+{
+    "firstName": "Dart",
+    "lastName": "Vader",
+    "email": "dartVader@deadstar.com",
+    "favoriteColor": "black",
+    "birthday": "01/01/1900"
+}
+###
+PUT https://week3.onrender.com/contacts/645047a4a9fae0f9af263466
+content-type: application/json
+
+{
+    "firstName": "R2D2",
+    "lastName": "Kenobi"
+}
+###
+DELETE https://week3.onrender.com/contacts/6450478aa9fae0f9af263465
+
