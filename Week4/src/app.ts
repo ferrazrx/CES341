@@ -21,7 +21,7 @@ app.use(
         scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
         connectSrc: ['*'],
         styleSrc: ["'self'", "'unsafe-inline'"],
-        imgSrc: ["'self'"],
+        imgSrc: ['*'],
       },
     },
   }),
