@@ -8,11 +8,17 @@ import { routes } from './routes';
 import bodyParser from 'body-parser';
 import swaggerDocument from '../swagger-output.json';
 import * as swaggerUi from 'swagger-ui-express';
+import cors from 'cors';
 
 const app: Express = express();
 
 // Security layer
 app.use(helmet());
+
+const origin = {
+  origin: '*',
+};
+app.use(cors(origin));
 
 app.use(bodyParser.json());
 
