@@ -18,9 +18,9 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ['*'],
-        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+        scriptSrc: ['*'],
         connectSrc: ['*'],
-        styleSrc: ["'self'", "'unsafe-inline'"],
+        styleSrc: ['*'],
         imgSrc: ['*'],
       },
     },
