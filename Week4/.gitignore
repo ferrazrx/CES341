@@ -9,6 +9,3 @@
 .env
 /_
 .vscode
-
-# Generated
-swagger-output.json
