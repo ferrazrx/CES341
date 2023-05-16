@@ -1,0 +1,56 @@
+###
+GET http://localhost:8082/users
+###
+POST http://localhost:8082/users/
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "jonhdoe@gmail.com",
+    "password": "123",
+    "createdAt": "01/01/1900",
+    "updatedAt": "01/01/1900",
+    "thumbnail": "1.png"
+}
+###
+
+###
+GET http://localhost:8082/phones
+###
+POST http://localhost:8082/phones/
+content-type: application/json
+
+{
+    "name": "Dart Vader",
+    "phone_number": "902 334 4456",
+    "createdAt": "01/01/1900",
+    "updatedAt": "01/01/1900",
+    "owner": "6462d8c3900db7b17580d7b3"
+}
+// Production
+###
+GET https://week3.onrender.com/contacts/
+
+###
+POST https://week3.onrender.com/contacts/
+content-type: application/json
+
+{
+    "firstName": "Dart",
+    "lastName": "Vader",
+    "email": "dartVader@deadstar.com",
+    "favoriteColor": "black",
+    "birthday": "01/01/1900"
+}
+###
+PUT https://week3.onrender.com/contacts/645047a4a9fae0f9af263466
+content-type: application/json
+
+{
+    "firstName": "R2D2",
+    "lastName": "Kenobi"
+}
+###
+DELETE https://week3.onrender.com/contacts/6450478aa9fae0f9af263465
+
