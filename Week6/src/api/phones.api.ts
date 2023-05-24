@@ -1,4 +1,4 @@
-import { body, validationResult } from 'express-validator';
+import { body } from 'express-validator';
 import * as phonesController from '../controllers/phones.controller';
 import { NextFunction, Router, Request, Response } from 'express';
 
@@ -25,7 +25,7 @@ router.post('/phones', phonesValidation(), (req: Request, res: Response, next: N
     } */
   return phonesController.createOne(req, res, next);
 });
-router.put('/phones/:id', phonesValidation, (rej: Request, res: Response, next: NextFunction) => {
+router.put('/phones/:id', phonesValidation(), (rej: Request, res: Response, next: NextFunction) => {
   return phonesController.updateOne(rej, res, next);
 });
 

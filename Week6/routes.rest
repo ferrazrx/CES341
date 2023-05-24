@@ -42,8 +42,65 @@ content-type: application/json
    "phone_number": "1234567890"
 }
 ###
-DELETE http://localhost:8082/users/6462ddca672921f355a64a28
+DELETE http://localhost:8082/users/6462e0b632a1e0bd84f0412a
 
 ###
 DELETE http://localhost:8082/phones/6462ddd9672921f355a64a2a
+
+// Production
+
+###
+GET https://week6-zrfg.onrender.com/phones
+###
+GET https://week6-zrfg.onrender.com/users
+###
+POST https://week6-zrfg.onrender.com/phones
+content-type: application/json
+
+{
+    "name": "Dart Vader",
+    "phone_number": "111111111",
+    "owner": "646d6d8ca9a7ce190028b548"
+}
+###
+POST https://week6-zrfg.onrender.com/users/
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "jonh@gmail.com",
+    "password": "123456789",
+    "createdAt": "01/01/1900",
+    "updatedAt": "01/01/1900",
+    "thumbnail": "1.png"
+}
+
+###
+PUT https://week6-zrfg.onrender.com/users/6462e0b632a1e0bd84f0412a
+content-type: application/json
+
+{
+    "firstName": "R2D2",
+    "lastName": "Kenobi"
+}
+
+###
+PUT https://week6-zrfg.onrender.com/phones/6462ddd9672921f355a64a2a
+content-type: application/json
+
+{
+   "phone_number": "1234567890"
+}
+###
+DELETE https://week6-zrfg.onrender.com/users/6462e0b632a1e0bd84f0412a
+
+###
+DELETE https://week6-zrfg.onrender.com/phones/6462ddd9672921f355a64a2a
+
+
+
+
+
+
 

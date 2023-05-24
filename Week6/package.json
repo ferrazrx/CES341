@@ -1,7 +1,7 @@
 {
-  "name": "week3",
+  "name": "week6",
   "version": "1.0.0",
-  "description": "Lesson 5: Phone numbers App",
+  "description": "Lesson 6: Validation and Error Handling",
   "main": "app.js",
   "scripts": {
     "lint": "eslint src/**/*.ts",

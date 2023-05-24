@@ -31,7 +31,7 @@ router.post('/users', userValidation(), (rej: Request, res: Response, next: Next
 
   return userController.createOne(rej, res, next);
 });
-router.put('/users/:id', userValidation, (rej: Request, res: Response, next: NextFunction) => {
+router.put('/users/:id', userValidation(), (rej: Request, res: Response, next: NextFunction) => {
   return userController.updateOne(rej, res, next);
 });
 

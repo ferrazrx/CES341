@@ -31,7 +31,6 @@ export class PhonesRepository implements Repository<Phone> {
     try {
       return await PhoneModel.create(phone);
     } catch (e) {
-      console.log(e);
       throw new DatabaseError('Something went wrong when trying to create a new phone number.');
     }
   }
