@@ -1,0 +1,49 @@
+###
+GET http://localhost:8082/phones
+###
+GET http://localhost:8082/users
+###
+POST http://localhost:8082/phones
+content-type: application/json
+
+{
+    "name": "Dart Vader",
+    "phone_number": "1",
+    "owner": "6462ddca672921f355a64a28"
+}
+###
+POST http://localhost:8082/users/
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "jonh",
+    "password": "123",
+    "createdAt": "01/01/1900",
+    "updatedAt": "01/01/1900",
+    "thumbnail": "1.png"
+}
+
+###
+PUT http://localhost:8082/users/6462ddca672921f355a64a28
+content-type: application/json
+
+{
+    "firstName": "R2D2",
+    "lastName": "Kenobi"
+}
+
+###
+PUT http://localhost:8082/phones/6462ddd9672921f355a64a2a
+content-type: application/json
+
+{
+   "phone_number": "1234567890"
+}
+###
+DELETE http://localhost:8082/users/6462ddca672921f355a64a28
+
+###
+DELETE http://localhost:8082/phones/6462ddd9672921f355a64a2a
+
