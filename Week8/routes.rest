@@ -12,14 +12,14 @@ content-type: application/json
     "owner": "6462ddca672921f355a64a28"
 }
 ###
-POST http://localhost:8082/users/
+POST http://localhost:8083/users/
 content-type: application/json
 
 {
     "firstName": "John",
     "lastName": "Doe",
-    "email": "jonh",
-    "password": "123",
+    "email": "jonh1@gmail.com",
+    "password": "12345678",
     "createdAt": "01/01/1900",
     "updatedAt": "01/01/1900",
     "thumbnail": "1.png"
